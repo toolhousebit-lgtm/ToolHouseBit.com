@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard — ToolHouseBit</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="brand">ToolHouseBit</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="feedback.html">Let's Talk</a>
+            </div>
+        </nav>
+    </header>
+
+    <header class="form-header">
+        <a href="index.html">← Home</a>
+        <h2>Dashboard</h2>
+        <div class="header-right">
+            <div class="profile-menu-wrapper">
+                <img id="profilePic" src="assets/default-avatar.png" alt="Profile" width="36" height="36"
+                    class="profile-trigger">
+                <span id="userName" class="user-name"></span>
+                <div class="profile-dropdown">
+                    <div class="dropdown-menu">
+                        <a href="#profile" class="menu-item">
+                            <span class="menu-icon">👤</span>
+
+                            Profile
+                        </a>
+                        <a href="#mytools" class="menu-item">
+                            <span class="menu-icon">🛠️</span>
+                            My Tools
+                        </a>
+                        <button id="logoutBtn" class="menu-item logout-item">
+                            <span class="menu-icon">🚪</span>
+                            Sign out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <h3 id="welcomeMsg">Welcome</h3>
+        <p class="muted">This is your dashboard, where you can see all people's projects!</p>
+
+        <!-- Search bar (moved below the welcome box) -->
+    </main>
+
+    <!-- Search bar placed below the welcome card -->
+    <form id="dashboardSearch" class="dashboard-search" role="search" aria-label="Search dashboard">
+        <label for="q" class="sr-only">Search</label>
+        <input id="q" name="q" type="search" placeholder="Search your tools..." autocomplete="off">
+        <button type="submit" aria-label="Search">🔍</button>
+    </form>
+
+    <!-- Search results placed below the dashboard card (not inside the white box) -->
+
+
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+
+</html>
