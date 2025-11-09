@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login — ToolHouseBit</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="brand">ToolHouseBit</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <header class="form-header">
+        <a href="index.html">← Home</a>
+        <h2>Login</h2>
+    </header>
+
+    <main class="form-container">
+        <form id="loginForm">
+            <label>
+                Username or Email
+                <input type="text" name="identifier" required>
+            </label>
+            <label>
+                Password
+                <input type="password" name="password" required>
+            </label>
+            <button type="submit">Login</button>
+            <p class="muted">Don't have an account? <a href="register.html">Register</a></p>
+            <p id="lg-msg" class="msg"></p>
+        </form>
+    </main>
+
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+
+</html>
