@@ -1,0 +1,5 @@
+{
+  "buildCommand": "# (no build needed)",
+  "outputDirectory": "src",
+  "public": "src"
+}
