@@ -51,11 +51,23 @@
                 <button type="button" class="show-code-btn" onclick="togglePasswordVisibility('confirm')">Show</button>
             </label>
             <button type="submit">Register</button>
-            <div style="text-align: center; margin: 20px 0;">
-                <p>Or</p>
-                <button type="button" id="googleSignUpBtn"
-                    style="width: 100%; padding: 10px; background-color: #4285F4; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">
-                    Sign Up with Google
+            <div style="text-align: center; margin: 30px 0;">
+                <p style="color: #5f6368; font-size: 13px; margin-bottom: 15px;">Or continue with</p>
+                <button type="button" id="googleSignUpBtn" class="google-signin-btn">
+                    <svg style="width: 18px; height: 18px; margin-right: 8px; vertical-align: middle;"
+                        viewBox="0 0 24 24">
+                        <g transform="matrix(1, 0, 0, 1, 27.009766, -39.238281)">
+                            <path fill="#4285F4"
+                                d="M -3.264 51.509 C -3.264 50.719 -3.334 49.969 -3.454 49.239 L -14.754 49.239 L -14.754 53.749 L -8.284 53.749 C -8.574 55.229 -9.424 56.479 -10.684 57.329 L -3.264 63.161 C -1.254 61.201 -3.264 55.659 -3.264 51.509 Z" />
+                            <path fill="#34A853"
+                                d="M -14.754 65.609 C -11.514 68.409 -7.099 70.199 -3.264 70.199 C 4.756 70.199 11.296 67.331 14.256 62.209 L 6.514 56.379 C 5.033 57.429 3.204 58.089 -3.264 58.089 C -9.604 58.089 -15.239 53.749 -17.134 47.805 L -24.844 53.589 C -23.884 59.789 -20.534 65.609 -14.754 65.609 Z" />
+                            <path fill="#FBBC05"
+                                d="M -24.844 53.589 C -25.404 52.089 -25.714 50.499 -25.714 48.859 C -25.714 47.219 -25.404 45.629 -24.844 44.129 L -24.844 38.349 C -28.974 46.519 -28.974 51.199 -24.844 53.589 Z" />
+                            <path fill="#EA4335"
+                                d="M -14.754 32.479 C -11.514 32.479 -8.804 33.529 -6.864 35.449 L -0.644 29.249 C -3.574 26.459 -7.099 24.709 -14.754 24.709 C -20.534 24.709 -23.884 30.549 -24.844 36.749 L -17.134 42.549 C -15.239 36.809 -9.604 32.479 -14.754 32.479 Z" />
+                        </g>
+                    </svg>
+                    <span>Sign up with Google</span>
                 </button>
             </div>
             <p class="muted">Already have an account? <a href="login.html">Login</a></p>
